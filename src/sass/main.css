@@ -1003,17 +1003,8 @@ body {
 }
 footer{
     background-color: var(--footer_bg);
-    transition: all ;
-    -webkit-transition: all ;
-    -moz-transition: all ;
-    -ms-transition: all ;
-    -o-transition: all ;
 }
 .gradient__bg_2 {
-  /* safari 5.1+,chrome 10+ */
-  /* opera 11.10+ */
-  /* ie 10+ */
-  /* global 92%+ browsers support */
   background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
 .d-flex-center{
@@ -1086,10 +1077,6 @@ footer{
   cursor: pointer;
   background-color: var(--color_3);
   transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
 }
 .scrolls svg {
   width: 47px;

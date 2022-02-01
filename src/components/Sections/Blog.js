@@ -1,5 +1,3 @@
-
-
 export default function Blog() {
   const box_item_blog = [
     {
