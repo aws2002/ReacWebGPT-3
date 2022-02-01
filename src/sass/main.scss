@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+:root {
+  --body_color: #040c18;
+  --color_1: #ff4820;
+  --color_2: #042c54;
+  --footer_bg: #031b34;
+  --color_3:#81AFDD;
+  --color_4:#71E5FF;
+  --color_5:#FF8A71;
+  --font_1:'Manrope', sans-serif;
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  --gradient-bar-2: linear-gradient(103.22deg, #042c54 -13.86%, #013c77 99.55%);
+}
+body {
+  background-color: var(--body_color);
+}
+footer{
+    background-color: var(--footer_bg);
+    transition: all ;
+    -webkit-transition: all ;
+    -moz-transition: all ;
+    -ms-transition: all ;
+    -o-transition: all ;
+}
+.gradient__bg_2 {
+  background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* safari 5.1+,chrome 10+ */
+  background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* opera 11.10+ */
+  background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* ie 10+ */
+  background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+  /* global 92%+ browsers support */
+  background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+}
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient__bg{
+  background: var(--gradient-text);
+}
+.gradient__bg--2{
+  background: var(--gradient-bar-2);
+}
+.bg-blog{
+  background-color: var(--color_2);
+}
+
+.color_1 {
+  color: var(--color_1);
+}
+.color_2 {
+  color: var(--color_2);
+}
+.color_3 {
+  color: var(--color_3);
+}
+.color_4 {
+  color: var(--color_4);
+}
+.color_5 {
+  color: var(--color_5);
+}
+.brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand ul li{
+  display: inline-block;
+  margin: 0 -20px;
+}
+.brand ul li img{
+  width: 50%;
+}
+.content--hero ul li{
+  display: inline-block;
+}
+.line{
+  height: 3px;
+  width: 100px;
+  margin-bottom: 5px;
+  background: var(--gradient-text);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.scrolls {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  line-height: 30px;
+  border-radius: 100%;
+  font-size: 20px;
+  position: fixed;
+  right: 37px;
+  bottom: 37px;
+  cursor: pointer;
+  background-color: var(--color_3);
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.scrolls svg {
+  width: 47px;
+  margin: 6px auto;
+  display: block;
+  vertical-align: middle;
+  line-height: 27px;
+  height: 47px;
+}
+.scrolls:hover {
+  background-color:var(--color_2);
+}
